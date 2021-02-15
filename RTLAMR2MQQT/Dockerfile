@@ -13,7 +13,8 @@ ENV LANG C.UTF-8
 MAINTAINER jaaem
 
 LABEL Description="This image is used to start a script that will monitor for RF events on 433Mhz (configurable) and send the data to an MQTT server"
-RUN echo -e "http://nl.alpinelinux.org/alpine/v3.5/main\nhttp://nl.alpinelinux.org/alpine/v3.5/community" > /etc/apk/repositories
+
+RUN echo -e "http://dl-cdn.alpinelinux.org/alpine/v3.12/main\nhttp://dl-cdn.alpinelinux.org/alpine/v3.12/community" > /etc/apk/repositories
 #
 # First install software packages needed to compile rtl_433 and to publish MQTT events
 #
